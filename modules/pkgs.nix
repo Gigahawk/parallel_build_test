@@ -39,7 +39,7 @@
             '';
           modulo = a: b: a - b * builtins.floor (a / b);
           isEven = x: modulo x 2 == 0;
-          numFiles = lib.range 0 25;
+          numFiles = lib.range 0 64;
           textFiles = builtins.map (
             x:
             if isEven x then
